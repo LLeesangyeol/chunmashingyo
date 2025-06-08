@@ -1,7 +1,14 @@
-s = {1, 5, 9, 3, 7, 0, 1}
+#page. 44
+s = {1, 2, 3}
+
+s.add(5)
 print(s)
 
-print(sorted(s, reverse=True))
+s.update([4, 5, 6])
+print(s)
 
-print(all(s))
-print(any(s))
+s.remove(3)
+print(s)
+
+s.discard(6)
+print(s)
