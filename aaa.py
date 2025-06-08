@@ -1,5 +1,7 @@
-n = int(input('초 입력: '))
-h = n // (60*60)
-m = (n - h*60*60) // 60
-s = n%60
-print(h, ":", m, ":", s)
+s = {1, 5, 9, 3, 7, 0, 1}
+print(s)
+
+print(sorted(s, reverse=True))
+
+print(all(s))
+print(any(s))
