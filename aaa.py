@@ -1,14 +1,17 @@
-#page. 44
-s = {1, 2, 3}
+# page. 48
+def get_divisors(num):
+  divisors = set()
+  for i in range(1, num+1):
+    if num % i == 0:
+      divisors.add(i)
+  return divisors
 
-s.add(5)
-print(s)
+x = 48
+print(x, '의 약수 :', get_divisors(x))
+y = 60
+print(y,'의 약수 :', get_divisors(y))
 
-s.update([4, 5, 6])
-print(s)
-
-s.remove(3)
-print(s)
-
-s.discard(6)
-print(s)
+A = get_divisors(x)
+B = get_divisors(y)
+print(x, y, '의 공약수 :', A.intersection(B))
+print(x, y, '의 공약수 :', max(A.intersection(B)))
